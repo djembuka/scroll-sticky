@@ -251,9 +251,8 @@ class twpxStickyScroll {
 
     //thumb mousemove
     document.addEventListener('mousemove', (e) => {
-      e.preventDefault();
-
       if (this.thumbClickedFlag) {
+        e.preventDefault();
         let left =
           e.clientX -
           this.scrollbar.getBoundingClientRect().x -
